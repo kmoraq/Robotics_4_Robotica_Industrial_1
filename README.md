@@ -67,6 +67,25 @@ Siguiente a esto, después de haber probado la simuación en RobotStudio, subimo
  
 ### Escritura sobre el plano inclinado a 30°
 
+ Ahora, con el fin de escribir sobre el plano inclinado, crearemos un nuevo Work Object utilizando la herramienta de Base de coordenadas: 
+ 
+ [![wob.png](https://i.postimg.cc/Wb9KnjwS/wob.png)](https://postimg.cc/KRMJG6Vg)
+ 
+En esta nueva base de coordenadas pegaremos todos los puntos generados en el punto anterior, y rotaremos todo el Work Object un ángulo de 30°. Así obtenemos la ruta a seguir:
+
+[![Whats-App-Image-2022-06-29-at-22-05-29-1.jpg](https://i.postimg.cc/yYtqKs3x/Whats-App-Image-2022-06-29-at-22-05-29-1.jpg)](https://postimg.cc/w7X4cKVY)
+
+Verificamos si todos los puntos cuentan con una configuración igual y modificamos la posición en x y y hasta encontrar una posición en la que todos los puntos cuenten con una igual y generamos la trayectoria como vimos en el anterior ejercicio:
+
+[![Whats-App-Image-2022-06-29-at-22-05-52.jpg](https://i.postimg.cc/rFJJGJMk/Whats-App-Image-2022-06-29-at-22-05-52.jpg)](https://postimg.cc/7f50wS5s)
+
+ 
+Realizamos la simulación del proecdimiento y obtenemos los siguientes resultados:
+
+https://youtu.be/YVUQ4p20W7k
+
+
+
 ## Análisis de código en RAPID
 
 El código de Rapid se desarrolla por medio de modulos, dentro de un módulo se desarrollan las rutinas o procedimientos deseados que describen las trayectorias deseadas. También se declaran los robtargets, los work objects y el código de main.
