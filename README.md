@@ -1,5 +1,43 @@
 # Robotics_4_Robotica_Industrial_1
 Laboratorio 4 - Rob ́otica Industrial No. 1
+## Herramienta
+Se decide utilizar un porta herramienta obtenido por impresión 3D, por esto, se realiza un modelo CAD en Invertor del porta herramienta teniendo en cuenta las dimensiones del acople del robot según la hoja de datos proporcionada por el fabricante ABB. 
+
+[![TOOLINVENTOR.jpg](https://i.postimg.cc/NFJKF8hC/TOOLINVENTOR.jpg)](https://postimg.cc/YLFryWCQ)
+
+Adicionalmente, se obtiene de GrabCAD un modelo aproximado a las dimensiones del marcador utilizado para trazar las iniciales de los nombres. Ya con esta información CAD se obtiene de inventor la información del centro de gravedad e inercia proponiendo una masa aproximada de 120g. Finalmente se exporta el modelo en formato sat para que pueda ser utilizado en el sofware Robot Studio.
+
+[![ROBOTOOL.jpg](https://i.postimg.cc/FR0bYBGW/ROBOTOOL.jpg)](https://postimg.cc/r0FRbgBx)
+
+El siguiente fragmento de código de RAPID muestra la declaración de la herramienta tooldata, en esta se define la posición, orientación, centro de gravedad e inercia de la herramienta.
+
+$P_x = -0.503 mm$
+
+$P_y = 0 mm$
+
+$P_z = 175.983 mm$
+
+La orientación es la misma que el el marco de referencia tool0 predefinido en el robot y se proporciona en Quaternios 
+
+$q = [1,0,0,0]$
+
+Las propiedades físicas y del centro de masa son las siguientes:
+
+$m = 120 g$
+
+$C_g =(0.304mm,0mm,59.07mm)$
+
+$Ix=Iz=0.001 kgm^2$
+
+$Iy = 0 kgm^2$
+``` RAPID
+MODULE Module1
+        PERS tooldata Marker:=[TRUE,[[-0.503,0,175.983],[1,0,0,0]],[0.12,[0.304,0,59.07],[1,0,0,0],0.001,0.001,0]];
+    PROC main()
+        !Add your code here
+    ENDPROC
+ENDMODULE
+```
 ## Análisis de código en RAPID
 
 El código de Rapid se desarrolla por medio de modulos, dentro de un módulo se desarrollan las rutinas o procedimientos deseados que describen las trayectorias deseadas. También se declaran los robtargets, los work objects y el código de main.
