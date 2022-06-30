@@ -40,12 +40,32 @@ ENDMODULE
 ```
 ## Diseño de trayectorias 
 
+### Escritura sobre el plano
 Con el fin de determinar las trayectorias con las cuales se crearían las letras, se determinan inicialmente las dimensiones de las letras y así mismo los puntos que las componen, como podemos ver en la imagen a continuación, en donde las dimensiones dadas se encuentran en centímetros. 
 [![aln.png](https://i.postimg.cc/RCcbjvCv/aln.png)](https://postimg.cc/pyLZjbnS)
 
 Luego de tener determinados los puntos que componen las letras, procedemos a crear los puntos en el programa de RobotStudio, estos puntos lo insertamos utilizando la herramienta de posición como se muestra en la imagen:
 
 [![pos.png](https://i.postimg.cc/Y0Z96Q4w/pos.png)](https://postimg.cc/QKghs9k6)
+
+Se realiza el posicionamiento de todos los puntos, teniendo en cuenta puntos de aproximación y también de elevación, y se obtiene la ruta mostrada a contiunación:
+
+[![Whats-App-Image-2022-06-29-at-22-05-28.jpg](https://i.postimg.cc/d316kcCx/Whats-App-Image-2022-06-29-at-22-05-28.jpg)](https://postimg.cc/FdM38qDy)
+
+Teniendo los puntos posicionados procedemos a verificar que todos los puntos puedan ser logrados con una misma configuración del robot, pues sino se cuenta con la misma configuración para todos los puntos no podrá seguir la trayectoria como se requiere. Como se encontraron casos en los que algunos puntos no contaban con las mismas configuraciones que los demás, se modificaba la posición del grupo de puntos para lograr la misma configuración en todos los puntos. Se genera la trayectoria seleccionando los puntos en el orden en el que se requiere que sean unidos utilizado la herramienta de ruta que se muestra a continuación.
+
+[![ruta.png](https://i.postimg.cc/BQysMxqj/ruta.png)](https://postimg.cc/56wZtQQJ)
+
+Se genera la trayectoria que se muestra a continuación:
+
+[![Whats-App-Image-2022-06-29-at-22-05-29.jpg](https://i.postimg.cc/6qpw1c2v/Whats-App-Image-2022-06-29-at-22-05-29.jpg)](https://postimg.cc/47qrYz1f)
+
+Siguiente a esto, después de haber probado la simuación en RobotStudio, subimos el código en RAPID mostrado en la siguiente sección y probamos el código en el robot y obtenemos los siguientes resultados probando de dos maneras distintas.
+ + Inicialmente probamos siguiendo instrucción por instrucción para verificar que los movimientos estuviesen correctos: https://youtube.com/shorts/sk4Xs8kjrB8?feature=share
+
+ + Después de verificar las instrucciones individuales, utilizando la rutina completa: https://youtube.com/shorts/rI1EoXUxG_k?feature=share
+ 
+### Escritura sobre el plano inclinado a 30°
 
 ## Análisis de código en RAPID
 
