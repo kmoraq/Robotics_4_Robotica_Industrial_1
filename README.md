@@ -73,49 +73,49 @@ Se declaran los valores de velocidad de v100 y los valores de error en z10 de ac
 
 ``` RAPID
     PROC Path_10()
-        MoveL aproach,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_10_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_20_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_30_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_40_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_50_2_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_50_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_60_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_70_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_80_2_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_80_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_90_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_100_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_110_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_120_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_130_2,v100,z10,tool0\WObj:=Wob;
-        MoveJ Target_130_2_2,v100,z10,tool0\WObj:=Wob;
-        MoveL aproach,v100,z10,tool0\WObj:=Wob;
+        MoveL aproach,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_10_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_20_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_30_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_40_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_50_2_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_50_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_60_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_70_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_80_2_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_80_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_90_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_100_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_110_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_120_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_130_2,v100,z10,Marker\WObj:=Wob;
+        MoveJ Target_130_2_2,v100,z10,Marker\WObj:=Wob;
+        MoveL aproach,v100,z10,Marker\WObj:=Wob;
     ENDPROC
 ``` 
 Para el desarrollo de la aplicación en un plano inclinado se realiza un procedimiento similar, sin embargo, se cambia el workobject por uno creado por el equipo de trabajo. Este workobject se encuentra con la inclinación solicitada de 30°.     
 
 ``` RAPID
     PROC Path_20()
-        MoveL app,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_10,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_20,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_30,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_40,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_50_4,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_50,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_60,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_70,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_80_3,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_80,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_90,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_100,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_110,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_120,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_130,v100,z10,tool0\WObj:=Grados;
-        MoveJ Target_130_3,v100,z10,tool0\WObj:=Grados;
-        MoveL app,v100,z10,tool0\WObj:=Grados;
+        MoveL app,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_10,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_20,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_30,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_40,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_50_4,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_50,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_60,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_70,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_80_3,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_80,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_90,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_100,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_110,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_120,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_130,v100,z10,Marker\WObj:=Grados;
+        MoveJ Target_130_3,v100,z10,Marker\WObj:=Grados;
+        MoveL app,v100,z10,Marker\WObj:=Grados;
     ENDPROC
 ``` 
-    
+En ambos casos también se especifíca el marco de la herramienta que fue creado, en este caso se le puso el nombre de Marker.
     
