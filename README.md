@@ -1,5 +1,5 @@
 # Robotics_4_Robotica_Industrial_1
-Laboratorio 4 - Rob ́otica Industrial No. 1
+Desarollo de la práctica de laboratorio número 4 de la materia de robótica.
 ## Herramienta
 Se decide utilizar un porta herramienta obtenido por impresión 3D, por esto, se realiza un modelo CAD en Invertor del porta herramienta teniendo en cuenta las dimensiones del acople del robot según la hoja de datos proporcionada por el fabricante ABB. 
 
@@ -38,6 +38,15 @@ MODULE Module1
     ENDPROC
 ENDMODULE
 ```
+## Diseño de trayectorias 
+
+Con el fin de determinar las trayectorias con las cuales se crearían las letras, se determinan inicialmente las dimensiones de las letras y así mismo los puntos que las componen, como podemos ver en la imagen a continuación, en donde las dimensiones dadas se encuentran en centímetros. 
+[![aln.png](https://i.postimg.cc/RCcbjvCv/aln.png)](https://postimg.cc/pyLZjbnS)
+
+Luego de tener determinados los puntos que componen las letras, procedemos a crear los puntos en el programa de RobotStudio, estos puntos lo insertamos utilizando la herramienta de posición como se muestra en la imagen:
+
+[![pos.png](https://i.postimg.cc/Y0Z96Q4w/pos.png)](https://postimg.cc/QKghs9k6)
+
 ## Análisis de código en RAPID
 
 El código de Rapid se desarrolla por medio de modulos, dentro de un módulo se desarrollan las rutinas o procedimientos deseados que describen las trayectorias deseadas. También se declaran los robtargets, los work objects y el código de main.
